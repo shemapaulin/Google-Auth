@@ -40,7 +40,7 @@ app.get(
     successRedirect: "/protected",
   })
 );
-app.get("/failure", (Req, Res) => {
+app.get("/auth/failure", (Req, Res) => {
   Res.send("failed to login");
 });
 
